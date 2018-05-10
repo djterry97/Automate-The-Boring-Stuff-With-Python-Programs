@@ -2,7 +2,7 @@
 
 import re, pyperclip
 
-# Create a regex for phone numbers
+# Create a regular expression for phone numbers
 phoneRegex = re.compile(r'''
 # 415-555-0000, 555-0000, (415) 555-0000, 555-0000 ext 12345, ext. 12345, x12345
 
@@ -23,7 +23,7 @@ phoneRegex = re.compile(r'''
 )
 ''', re.VERBOSE)
 
-# Create a regex for email addresses
+# Create a regular expression for email addresses
 emailRegex = re.compile(r'''
 # some.+_thing@something.com
 
@@ -50,6 +50,6 @@ for phoneNumber in extractedPhone:
 # print(allPhoneNumbers)
 # print(extractedEmail)
 
-#TODO: Copy the extracted email/phone to the clipboard
+# Copy the extracted email/phone to the clipboard
 results = '\n'.join(allPhoneNumbers) +  '\n' +'\n'.join(extractedEmail)
 pyperclip.copy(results)
