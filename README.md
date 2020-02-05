@@ -1,3 +1,3 @@
 # Python
 
-This repository holds my small, simple python programs that do not warrant a separate repository.
+Small python programs I have done while doing the Udemy course "Automate the Boring Stuff with Python"
